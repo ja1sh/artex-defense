@@ -2,15 +2,14 @@
 
 **v0.1.0 • Experimental detection engineering • Synthetic validation**
 
-A small, runnable purple-team starter that builds on existing Sigma work rather
-than claiming every agent-assisted intrusion needs a new signature. Two attributed
-upstream fingerprints complement seven new normalized telemetry building blocks
-and five correlations. The contribution is a reproducible validation/playbook
-layer, not a claim to be the first ARTEX detection repository.
+A Sigma detection pack and offline purple-team test harness for ARTEX-relevant
+behavior. Includes seven behavioral rules, five correlations and two upstream
+Xint/Theori fingerprints, with fixtures, telemetry requirements and a validation
+playbook.
 
 ![ARTEX Defense Lab workflow: normalize telemetry, apply seven behavioral rules and two upstream fingerprints, correlate five scenarios, and validate with positive, benign and known-false-positive fixtures. Synthetic tests are not attribution or production validation.](docs/assets/defense-workflow.svg)
 
-## Run in five minutes
+## Quick start
 
 Python 3.10+ required. From this repository:
 
@@ -24,11 +23,11 @@ artex-replay fixtures/benign.jsonl --root .
 artex-replay fixtures/known_false_positive.jsonl --root .
 ```
 
-Replay reads JSONL and prints JSON matches; **it never executes event content or
-contacts a target**. Atomic context matches are not actionable alerts. Filter on
-`kind == "correlation"` to see the five positive scenario alerts. Benign has no
-correlation alerts. Approved credential rotation deliberately produces one alert
-in `known_false_positive`, showing why tuning and human investigation matter.
+Replay reads JSONL and emits JSON matches without executing event content or
+contacting a target. Atomic matches provide context; filter on
+`kind == "correlation"` for correlation alerts. The positive fixture produces five
+alerts, the benign fixture produces none, and the approved credential-rotation
+fixture produces one known false positive.
 
 ## Contents
 
@@ -43,19 +42,20 @@ in `known_false_positive`, showing why tuning and human investigation matter.
 - [Coverage and evidence](docs/coverage.md)
 - [Sources and licensing](docs/sources.md)
 
-## What is and isn't validated
+## Testing and deployment
 
-All shipped YAML parses with pySigma and correlation references resolve. Tests
-exercise synthetic normalized records only. No ARTEX binary, real intrusion,
-customer telemetry, endpoint lab or SIEM execution was used. These rules are
-**hypotheses for behavior detection**, not evidence of ARTEX attribution. The
-upstream strings are changeable fingerprints; absence of matches proves nothing.
+The 25-test suite checks Sigma parsing and rule references, atomic matching,
+correlation order and time windows, identity boundaries, distinct counts, upstream
+file integrity and atomic Splunk query compilation. Synthetic fixtures cover
+positive sequences, benign activity and an approved-automation false positive.
 
-The custom logsource requires your own normalization. Do not deploy directly
-against raw Entra, Graph, WAF or Key Vault logs. The fixture evaluator intentionally
-supports only this pack's selection + two-stage ordered/value-count subset;
-backend correlation/window semantics must be validated before enabling alerts.
-Start in audit-only mode. No destructive playbooks or automated response.
+Live ARTEX execution and SIEM runtime behavior have not been validated. Matches
+identify behavior or fingerprints, not attribution to ARTEX.
+
+Map source telemetry to the documented normalized schema before deployment. The
+offline evaluator supports this pack's selection, two-stage ordered and
+distinct-count logic; it is not a general Sigma engine. Validate field mappings
+and correlation semantics in your SIEM, then baseline in audit-only mode.
 
 ## Contributing and deployment readiness
 
