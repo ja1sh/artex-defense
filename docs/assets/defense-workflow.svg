@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">ARTEX Defense Lab: from telemetry to testable hypotheses</title>
+<desc id="desc">Seven original behavior rules and two upstream fingerprints support five correlation scenarios. Offline positive, benign, and known false positive fixtures validate logic. Production mapping and attribution remain unvalidated.</desc>
+<rect width="1200" height="800" rx="24" fill="#0b1220"/>
+<text x="48" y="54" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#68dcca">ARTEX DEFENSE LAB</text>
+<text x="48" y="106" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#e6edf7">Turn telemetry into testable hypotheses.</text>
+<text x="48" y="143" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#b7c8df">A Sigma + purple-team starter. Behavior evidence, not attacker attribution.</text>
+<rect x="48" y="183" width="344" height="183" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="70" y="218" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">01</text>
+<text x="70" y="251" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#e6edf7">NORMALIZE</text>
+<text x="70" y="284" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">Web / auth / cloud audit</text>
+<text x="70" y="311" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">Stable actor + tenant IDs</text>
+<text x="70" y="338" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">Trusted session linkage</text>
+<rect x="428" y="183" width="344" height="183" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="450" y="218" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">02</text>
+<text x="450" y="251" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#e6edf7">DETECT + CORRELATE</text>
+<text x="450" y="284" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">7 original context rules</text>
+<text x="450" y="311" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">2 Xint / Theori fingerprints</text>
+<text x="450" y="338" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">5 behavioral correlations</text>
+<rect x="808" y="183" width="344" height="183" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="830" y="218" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">03</text>
+<text x="830" y="251" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#e6edf7">REPLAY + REVIEW</text>
+<text x="830" y="284" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">Positive: 5 scenario alerts</text>
+<text x="830" y="311" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">Benign: 0 correlations</text>
+<text x="830" y="338" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#b7c8df">Approved CI: 1 known FP</text>
+<text x="402" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#68dcca">›</text>
+<text x="782" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#68dcca">›</text>
+<text x="48" y="414" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#68dcca">FIVE SCENARIOS TO EXERCISE</text>
+<rect x="48" y="437" width="552" height="78" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="64" y="466" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">01</text>
+<text x="102" y="466" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf7">Web probe → successful login</text>
+<text x="102" y="492" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#b7c8df">Same tenant, app and trusted session • 10 min</text>
+<rect x="616" y="437" width="552" height="78" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="632" y="466" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">02</text>
+<text x="670" y="466" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf7">Login → restricted data read</text>
+<text x="670" y="492" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#b7c8df">Same tenant, app and trusted session • 10 min</text>
+<rect x="48" y="529" width="552" height="78" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="64" y="558" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">03</text>
+<text x="102" y="558" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf7">Discovery → app credential added</text>
+<text x="102" y="584" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#b7c8df">Same tenant and initiating actor • 10 min</text>
+<rect x="616" y="529" width="552" height="78" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="632" y="558" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">04</text>
+<text x="670" y="558" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf7">Discovery → privileged role added</text>
+<text x="670" y="584" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#b7c8df">Same tenant and initiating actor • 10 min</text>
+<rect x="48" y="621" width="1120" height="66" rx="16" fill="#142238" stroke="#28425f"/>
+<text x="64" y="650" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#68dcca">05</text>
+<text x="102" y="650" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#e6edf7">10 distinct secrets read within 10 minutes</text>
+<text x="102" y="674" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#b7c8df">Same tenant, initiating actor and vault. Threshold is a starting hypothesis.</text>
+<rect x="48" y="710" width="1120" height="54" rx="16" fill="#2c2518" stroke="#75603a"/>
+<text x="66" y="743" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#f5d591">VALIDATED: synthetic logic     •     NOT VALIDATED: live attacks, SIEM runtime, detection efficacy</text>
+</svg>
