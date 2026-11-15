@@ -1,0 +1,13 @@
+{
+  "positive": [
+    "ad_bulk_secrets",
+    "ad_discovery_then_credential",
+    "ad_discovery_then_role",
+    "ad_login_then_sensitive_read",
+    "ad_probe_then_login"
+  ],
+  "benign": [],
+  "known_false_positive": [
+    "ad_discovery_then_credential"
+  ]
+}

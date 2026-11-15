@@ -1,0 +1,18 @@
+title: Discovery Then Role
+id: e0a6c943-191c-5939-8204-6964ebd187cc
+name: ad_discovery_then_role
+status: experimental
+description: Ordered behavior requiring investigation, not proof of compromise. Excludes
+  missing correlation keys. Tune timeframe and identity mapping.
+author: Jai Sharma
+date: '2026-11-15'
+correlation:
+  type: temporal_ordered
+  rules:
+  - ad_graph_discovery
+  - ad_role_added
+  group-by:
+  - TenantId
+  - ActorId
+  timespan: 10m
+level: medium

@@ -1,0 +1,19 @@
+title: Probe Then Login
+id: 096923e1-3ae3-5d18-884f-e4e6194329d4
+name: ad_probe_then_login
+status: experimental
+description: Ordered behavior requiring investigation, not proof of compromise. Excludes
+  missing correlation keys. Tune timeframe and identity mapping.
+author: Jai Sharma
+date: '2026-11-15'
+correlation:
+  type: temporal_ordered
+  rules:
+  - ad_web_probe
+  - ad_auth_success
+  group-by:
+  - TenantId
+  - ApplicationId
+  - SessionId
+  timespan: 10m
+level: medium

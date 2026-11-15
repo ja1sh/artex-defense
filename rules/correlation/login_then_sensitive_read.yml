@@ -1,0 +1,19 @@
+title: Login Then Sensitive Read
+id: 2b7ed0fa-8ee9-5980-ba8d-bc3ebfc070b1
+name: ad_login_then_sensitive_read
+status: experimental
+description: Ordered behavior requiring investigation, not proof of compromise. Excludes
+  missing correlation keys. Tune timeframe and identity mapping.
+author: Jai Sharma
+date: '2026-11-15'
+correlation:
+  type: temporal_ordered
+  rules:
+  - ad_auth_success
+  - ad_sensitive_read
+  group-by:
+  - TenantId
+  - ApplicationId
+  - SessionId
+  timespan: 10m
+level: medium

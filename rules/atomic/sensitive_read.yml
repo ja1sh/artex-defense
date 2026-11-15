@@ -1,0 +1,25 @@
+title: Successful Sensitive Record Access
+id: 04054ead-f5d8-5a77-a20f-652613a91eb6
+name: ad_sensitive_read
+status: experimental
+description: Context event; requires classification of the resource. Behavioral building
+  block; not ARTEX attribution.
+references:
+- https://www.ic3.gov/CSA/2026/261113.pdf
+- https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/
+author: Jai Sharma
+date: '2026-11-15'
+tags:
+- attack.t1213
+logsource:
+  category: application
+  product: artex_defense_normalized
+detection:
+  selection:
+    EventType: data_access
+    Outcome: success
+    Sensitivity: restricted
+  condition: selection
+falsepositives:
+- Context event; requires classification of the resource.
+level: informational

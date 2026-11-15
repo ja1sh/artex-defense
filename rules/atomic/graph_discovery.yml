@@ -1,0 +1,28 @@
+title: Application Permission Discovery
+id: 7e8f08b1-92b8-5619-a283-eb9a5215035d
+name: ad_graph_discovery
+status: experimental
+description: Context event; inventory and compliance automation frequently match.
+  Behavioral building block; not ARTEX attribution.
+references:
+- https://www.ic3.gov/CSA/2026/261113.pdf
+- https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/
+author: Jai Sharma
+date: '2026-11-15'
+tags:
+- attack.t1087.004
+logsource:
+  category: application
+  product: artex_defense_normalized
+detection:
+  selection:
+    EventType: graph
+    Operation:
+    - applications.list
+    - servicePrincipals.list
+    - roleAssignments.list
+    Outcome: success
+  condition: selection
+falsepositives:
+- Context event; inventory and compliance automation frequently match.
+level: informational

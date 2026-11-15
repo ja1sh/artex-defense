@@ -1,0 +1,5 @@
+{"EventId": "0", "Timestamp": "2026-11-15T00:00:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "lab-actor", "EventType": "web", "AttackCategory": "none"}
+{"EventId": "1", "Timestamp": "2026-11-15T00:01:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "lab-actor", "EventType": "auth", "Outcome": "failure"}
+{"EventId": "2", "Timestamp": "2026-11-15T00:02:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "lab-actor", "EventType": "data_access", "Outcome": "success", "Sensitivity": "public"}
+{"EventId": "3", "Timestamp": "2026-11-15T00:03:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "lab-actor", "EventType": "graph", "Operation": "applications.list", "Outcome": "success"}
+{"EventId": "4", "Timestamp": "2026-11-15T00:04:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "different-admin", "EventType": "audit", "Operation": "application.credential.add", "Outcome": "success"}

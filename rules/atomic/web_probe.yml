@@ -1,0 +1,27 @@
+title: Web Exploit Category Observed
+id: a756d052-eebf-5720-8bc2-c1831aef765c
+name: ad_web_probe
+status: experimental
+description: WAF category is a vendor assertion, not proof of exploitation. Behavioral
+  building block; not ARTEX attribution.
+references:
+- https://www.ic3.gov/CSA/2026/261113.pdf
+- https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/
+author: Jai Sharma
+date: '2026-11-15'
+tags:
+- attack.t1190
+logsource:
+  category: application
+  product: artex_defense_normalized
+detection:
+  selection:
+    EventType: web
+    AttackCategory:
+    - sqli
+    - rce
+    - path_traversal
+  condition: selection
+falsepositives:
+- WAF category is a vendor assertion, not proof of exploitation.
+level: informational

@@ -1,0 +1,23 @@
+[
+  {
+    "file": "vendor/theori/web_artex_api_recon_user_agent.yml",
+    "source": "https://github.com/theori-io/aipt-detections/blob/main/sigma/web/web_artex_api_recon_user_agent.yml",
+    "git_blob_sha": "a98b4cc6c79582585b2e0db08b23d913ac93ddc8",
+    "sha256": "eaa7bd600786b4c0a225c6b58efd8e61b2494706d454cba030ac3b1119732fb0",
+    "byte_identical_to_blob": true
+  },
+  {
+    "file": "vendor/theori/web_artex_enrich_user_agent.yml",
+    "source": "https://github.com/theori-io/aipt-detections/blob/main/sigma/web/web_artex_enrich_user_agent.yml",
+    "git_blob_sha": "34930d4ff2a18f33a8fe3fa57c4bee03273382b8",
+    "sha256": "b38257d64c5ec749192876da2abd61c83d44dbbe94cf754b71b002cda397a1f0",
+    "byte_identical_to_blob": true
+  },
+  {
+    "file": "vendor/theori/LICENSE",
+    "source": "https://github.com/theori-io/aipt-detections/blob/main/LICENSE",
+    "git_blob_sha": "ba2b39f4a83f4ce8c14a184c75ee2a1f6ea3986b",
+    "sha256": "f648caafc6fd444dc1a9f92a0e1102e71128b9324677b34817babb7468bdb02e",
+    "byte_identical_to_blob": true
+  }
+]

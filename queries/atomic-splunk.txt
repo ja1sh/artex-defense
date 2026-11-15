@@ -1,0 +1,30 @@
+# Generated atomic Splunk filters; not scheduled detections.
+# No index/sourcetype pipeline; normalize and scope before use.
+# Correlations are NOT included. Never treat these as attributable ARTEX alerts.
+
+# rules/atomic/auth_success.yml
+EventType="auth" Outcome="success"
+
+# rules/atomic/credential_added.yml
+EventType="audit" Operation="application.credential.add" Outcome="success"
+
+# rules/atomic/graph_discovery.yml
+EventType="graph" Operation IN ("applications.list", "servicePrincipals.list", "roleAssignments.list") Outcome="success"
+
+# rules/atomic/role_added.yml
+EventType="audit" Operation="directory.role.assign" Outcome="success" Privileged=true
+
+# rules/atomic/secret_read.yml
+EventType="vault" Operation="SecretGet" Outcome="success"
+
+# rules/atomic/sensitive_read.yml
+EventType="data_access" Outcome="success" Sensitivity="restricted"
+
+# rules/atomic/web_probe.yml
+EventType="web" AttackCategory IN ("sqli", "rce", "path_traversal")
+
+# vendor/theori/web_artex_api_recon_user_agent.yml
+"cs-user-agent"="Mozilla/5.0 (spa-api-recon*"
+
+# vendor/theori/web_artex_enrich_user_agent.yml
+"cs-user-agent"="artex-enrich/*"

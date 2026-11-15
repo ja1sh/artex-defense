@@ -1,0 +1,2 @@
+{"EventId": "0", "Timestamp": "2026-11-15T00:00:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "approved-ci", "EventType": "graph", "Operation": "applications.list", "Outcome": "success"}
+{"EventId": "1", "Timestamp": "2026-11-15T00:01:00Z", "TenantId": "lab-tenant", "ApplicationId": "lab-app", "SessionId": "lab-session", "ActorId": "approved-ci", "EventType": "audit", "Operation": "application.credential.add", "Outcome": "success"}
