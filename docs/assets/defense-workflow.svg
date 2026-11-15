@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
 <title id="title">ARTEX Defense Lab workflow</title>
 <desc id="desc">Normalize telemetry, apply seven behavioral rules and two upstream fingerprints, correlate five scenarios, and replay synthetic fixtures. Synthetic validation only; not attacker attribution or live SIEM validation.</desc>
 <defs>
@@ -7,7 +7,7 @@
   <linearGradient id="glass" x2=".8" y2="1"><stop stop-color="#e3f6ff" stop-opacity=".10"/><stop offset="1" stop-color="#d7e9ff" stop-opacity=".025"/></linearGradient>
   <linearGradient id="edge" x2="1" y2="1"><stop stop-color="#d7f6ff" stop-opacity=".42"/><stop offset=".5" stop-color="#a8d5ea" stop-opacity=".12"/><stop offset="1" stop-color="#d7f6ff" stop-opacity=".25"/></linearGradient>
 </defs>
-<rect width="1200" height="520" rx="24" fill="url(#bg)"/>
+<rect width="1200" height="440" rx="24" fill="url(#bg)"/>
 <ellipse cx="310" cy="260" rx="430" ry="290" fill="url(#glow)"/>
 <ellipse cx="1070" cy="450" rx="320" ry="260" fill="url(#glow)"/>
 <g fill="none" stroke="#b9d9ef" stroke-width=".7" opacity=".10"><path d="M0 410 Q370 80 1200 220"/><path d="M0 440 Q460 120 1200 250"/></g>
@@ -41,7 +41,4 @@
 <g fill="none" stroke="#b0d4de" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"><circle cx="933" cy="269" r="16"/><path d="M925 269l6 6 12 -13"/></g>
 <text x="916" y="334" fill="#e7f0f8" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400">Validate</text>
 <text x="916" y="367" fill="#b2c5d5" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400">Synthetic fixture replay</text>
-<path d="M48 439H1152" stroke="#c6e3ef" stroke-opacity=".17" stroke-width=".7"/>
-<text x="48" y="478" fill="#aac4d2" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400">Synthetic validation only</text>
-<text x="623" y="478" fill="#aac4d2" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400">Not attribution. Live SIEM validation pending.</text>
 </svg>
