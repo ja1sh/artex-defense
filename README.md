@@ -1,12 +1,14 @@
 # ARTEX Defense Lab
 
-**Private preview • v0.1.0 • experimental detections, not verified attribution**
+**v0.1.0 • Experimental detection engineering • Synthetic validation**
 
 A small, runnable purple-team starter that builds on existing Sigma work rather
 than claiming every agent-assisted intrusion needs a new signature. Two attributed
 upstream fingerprints complement seven new normalized telemetry building blocks
 and five correlations. The contribution is a reproducible validation/playbook
 layer, not a claim to be the first ARTEX detection repository.
+
+![ARTEX Defense Lab workflow: normalize telemetry, apply seven behavioral rules and two upstream fingerprints, correlate five scenarios, and validate with positive, benign and known-false-positive fixtures. Synthetic tests are not attribution or production validation.](docs/assets/defense-workflow.svg)
 
 ## Run in five minutes
 
@@ -55,11 +57,13 @@ supports only this pack's selection + two-stage ordered/value-count subset;
 backend correlation/window semantics must be validated before enabling alerts.
 Start in audit-only mode. No destructive playbooks or automated response.
 
-## Privacy and release
+## Contributing and deployment readiness
 
-Keep this preview private. No public release, publishing workflow, outbound
-telemetry or credentials are included. See `docs/release-checklist.md` before any
-future public release. This repository does not create or authorize a public post.
+Start with a reproducible fixture, expected matches and a clear telemetry mapping.
+Include a benign counterexample and explain tuning tradeoffs when proposing rules.
+Do not submit credentials, personal data or customer logs. See the
+[deployment readiness checklist](docs/release-checklist.md) before operational use.
+The offline evaluator has no outbound telemetry and never executes event content.
 
 ## License
 
