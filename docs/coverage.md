@@ -20,5 +20,5 @@ coverage percentage or attribution accuracy has been measured.
 
 Existing ecosystem: Theori's aipt-detections already provides ARTEX indicators;
 jiwoochris/artex-global also addresses correlations and synthetic validation. This
-preview does not assert novelty over those projects. It adds a small inspectable
+project does not assert novelty over those projects. It adds a small inspectable
 starter tailored to a normalized telemetry/playbook workflow.
