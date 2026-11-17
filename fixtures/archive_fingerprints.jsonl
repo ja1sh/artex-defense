@@ -1,0 +1,3 @@
+{"EventId": "archive-0", "Timestamp": "2026-11-17T00:00:00Z", "EventType": "web", "cs-method": "GET", "cs-user-agent": "artex-enrich/1.0", "FixtureKind": "synthetic-source-derived"}
+{"EventId": "archive-1", "Timestamp": "2026-11-17T00:01:00Z", "EventType": "web", "cs-method": "GET", "cs-user-agent": "Mozilla/5.0 (spa-api-recon)", "FixtureKind": "synthetic-source-derived"}
+{"EventId": "archive-2", "Timestamp": "2026-11-17T00:02:00Z", "EventType": "web", "cs-method": "GET", "cs-user-agent": "Mozilla/5.0 (spa-api-recon spider)", "FixtureKind": "synthetic-source-derived"}

@@ -9,6 +9,14 @@ playbook.
 
 ![ARTEX Defense Lab workflow: normalize telemetry, apply seven behavioral rules and two upstream fingerprints, correlate five scenarios, and validate with positive, benign and known-false-positive fixtures. Synthetic tests are not attribution or production validation.](docs/assets/defense-workflow.svg)
 
+## Original ARTEX source
+
+We have cross-checked the existing fingerprints against the original
+[ARTEX repository preserved by Software Heritage](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/Autumn-27/ARTEX),
+pinned to revision `e6ec56999175509551a1e43a3ee3b053d0941bd9`.
+See the [source mapping and limitations](docs/archived-source-review.md).
+This is not a claim of complete attack-chain coverage or live validation.
+
 ## Quick start
 
 Python 3.10+ required. From this repository:
@@ -44,7 +52,7 @@ fixture produces one known false positive.
 
 ## Testing and deployment
 
-The 25-test suite checks Sigma parsing and rule references, atomic matching,
+The test suite checks Sigma parsing and rule references, atomic matching,
 correlation order and time windows, identity boundaries, distinct counts, upstream
 file integrity and atomic Splunk query compilation. Synthetic fixtures cover
 positive sequences, benign activity and an approved-automation false positive.

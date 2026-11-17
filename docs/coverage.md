@@ -22,3 +22,12 @@ Existing ecosystem: Theori's aipt-detections already provides ARTEX indicators;
 jiwoochris/artex-global also addresses correlations and synthetic validation. This
 project does not assert novelty over those projects. It adds a small inspectable
 starter tailored to a normalized telemetry/playbook workflow.
+
+## Source cross-check (2026-11-17)
+
+The three exact UA values in the archived original source match the existing two
+Theori prefix rules. [Pinned evidence and limits](archived-source-review.md)
+distinguish this code-level observation from report-motivated behavior hypotheses.
+`fixtures/archive_fingerprints.jsonl` produces three atomic matches and zero
+correlations. It is synthetic, not a traffic capture. The five correlations above
+are not upgraded to source-confirmed attack chains by this check.

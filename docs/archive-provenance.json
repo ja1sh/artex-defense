@@ -1,0 +1,48 @@
+{
+  "origin": "https://github.com/Autumn-27/ARTEX",
+  "archive_origin_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/Autumn-27/ARTEX",
+  "reviewed_on": "2026-11-17",
+  "archive_visit_utc": "2026-10-07T14:25:51Z",
+  "revision": "e6ec56999175509551a1e43a3ee3b053d0941bd9",
+  "directory_swhid": "swh:1:dir:bcee5171ddb6ce4d8daacbd13b6b36d5f7601b2b",
+  "review_scope": "Static inspection of three request-producing files, README and LICENSE; no execution or full code audit.",
+  "vendored": false,
+  "files": [
+    {
+      "path": "enrich/enrich.go",
+      "content_swhid": "swh:1:cnt:7c8fc13ee74d60790c880df49ed319854f7f3f0a",
+      "archive_url": "https://archive.softwareheritage.org/browse/content/sha1_git:7c8fc13ee74d60790c880df49ed319854f7f3f0a/?origin_url=https://github.com/Autumn-27/ARTEX&path=bcee5171ddb6ce4d8daacbd13b6b36d5f7601b2b/enrich/enrich.go",
+      "observed_user_agent": "artex-enrich/1.0",
+      "line": 233,
+      "matching_rule": "web_artex_enrich_user_agent"
+    },
+    {
+      "path": "skills/api-recon/scripts/harvest_static.py",
+      "content_swhid": "swh:1:cnt:d1974c55007e8f5a36e7e8e85893a61eebc9b92c",
+      "archive_url": "https://archive.softwareheritage.org/browse/content/sha1_git:d1974c55007e8f5a36e7e8e85893a61eebc9b92c/?origin_url=https://github.com/Autumn-27/ARTEX&path=bcee5171ddb6ce4d8daacbd13b6b36d5f7601b2b/skills/api-recon/scripts/harvest_static.py",
+      "observed_user_agent": "Mozilla/5.0 (spa-api-recon)",
+      "line": 23,
+      "matching_rule": "web_artex_api_recon_user_agent"
+    },
+    {
+      "path": "skills/api-recon/scripts/spider_mpa.py",
+      "content_swhid": "swh:1:cnt:d91f2f71a4df696f28bba3f65de726de3c1b6c7a",
+      "archive_url": "https://archive.softwareheritage.org/browse/content/sha1_git:d91f2f71a4df696f28bba3f65de726de3c1b6c7a/?origin_url=https://github.com/Autumn-27/ARTEX&path=bcee5171ddb6ce4d8daacbd13b6b36d5f7601b2b/skills/api-recon/scripts/spider_mpa.py",
+      "observed_user_agent": "Mozilla/5.0 (spa-api-recon spider)",
+      "line": 22,
+      "matching_rule": "web_artex_api_recon_user_agent"
+    }
+  ],
+  "supporting_documents": [
+    {
+      "path": "README.md",
+      "content_swhid": "swh:1:cnt:3bddb9c84b05a523c301c1dec57aa119fbadb11e",
+      "archive_url": "https://archive.softwareheritage.org/browse/content/sha1_git:3bddb9c84b05a523c301c1dec57aa119fbadb11e/?origin_url=https://github.com/Autumn-27/ARTEX&path=bcee5171ddb6ce4d8daacbd13b6b36d5f7601b2b/README.md"
+    },
+    {
+      "path": "LICENSE",
+      "content_swhid": "swh:1:cnt:be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "archive_url": "https://archive.softwareheritage.org/browse/content/sha1_git:be3f7b28e564e7dd05eaf59d64adba1a4065ac0e/?origin_url=https://github.com/Autumn-27/ARTEX&path=LICENSE"
+    }
+  ]
+}

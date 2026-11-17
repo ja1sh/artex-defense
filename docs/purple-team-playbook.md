@@ -68,3 +68,20 @@ An offline pass means logical consistency only. A deployment pass additionally
 requires real test-index mapping and backend semantics validation, an agreed noise
 budget, logging-gap monitoring and an owner. No live validation is claimed here.
 Teardown any later lab changes and revoke test access under the approved plan.
+
+## PT-06: archived-source fingerprint compatibility (offline)
+
+Replay `fixtures/archive_fingerprints.jsonl`. It contains the three exact
+User-Agent values statically observed in the [pinned original source](archived-source-review.md).
+Expected: three atomic matches (one enrichment, two API recon), all credited to
+Xint, and zero correlations. Do not classify a UA-only event as SQL injection or
+invent a login/secret-read chain merely to trigger PT-01 through PT-05.
+
+```sh
+artex-replay fixtures/archive_fingerprints.jsonl --root .
+```
+
+The tests also cover ordinary-browser, absent-header and near-prefix controls.
+Anyone can copy a matching header: an atomic hit does not establish origin,
+compromise or malicious intent. This scenario reads fixtures only; it does not
+run the original scripts or generate requests to a site.

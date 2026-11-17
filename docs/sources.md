@@ -19,3 +19,10 @@ are MIT; the MIT grant does not override vendored DRL obligations.
 No code/rules from the AGPL-licensed related project are included. Behavioral
 hypotheses were authored here and should not be presented as validated signatures
 from either report. See the evidence ledger for the distinction.
+
+## Original archived source, reviewed 2026-11-17
+
+The original `Autumn-27/ARTEX` archive has now been considered alongside the
+reports. See [the pinned source comparison](archived-source-review.md) and
+[provenance manifest](archive-provenance.json) for the inspected revision, files,
+headers and scope. No original ARTEX program code is vendored or executed here.
