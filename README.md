@@ -17,6 +17,9 @@ pinned to revision `e6ec56999175509551a1e43a3ee3b053d0941bd9`.
 See the [source mapping and limitations](docs/archived-source-review.md).
 This is not a claim of complete attack-chain coverage or live validation.
 
+The [fork comparison](docs/fork-review/README.md) checks three public ARTEX
+variants against the pinned archive and outlines what to validate in your SIEM.
+
 ## Quick start
 
 Python 3.10+ required. From this repository:

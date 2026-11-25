@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-11-25",
+  "baseline": {
+    "origin": "Autumn-27/ARTEX",
+    "revision": "e6ec56999175509551a1e43a3ee3b053d0941bd9",
+    "directory_swhid": "swh:1:dir:bcee5171ddb6ce4d8daacbd13b6b36d5f7601b2b",
+    "version": "0.3.15",
+    "evidence": "ARTEX Defense's archived-source review; selected baseline blobs fetched at identical revision through RuoJi6"
+  },
+  "pins": [
+    {
+      "repo": "BaaRai/ARTEX",
+      "head": "3cb06383fd99ffe7686abe1d375de11da7cfad54",
+      "comparison": "diverged",
+      "ahead": 1437,
+      "behind": 444,
+      "merge_base": "ad9f14f140eb240d635c896aceb39ef40af4b2dd",
+      "changed_file_rows_returned": 300
+    },
+    {
+      "repo": "RuoJi6/ARTEX",
+      "head": "253a8eeac3b278cd4ff383674a31a0edcc34e143",
+      "comparison": "ahead",
+      "ahead": 310,
+      "behind": 0,
+      "merge_base": "e6ec56999175509551a1e43a3ee3b053d0941bd9",
+      "changed_file_rows_returned": 300
+    },
+    {
+      "repo": "jiwoochris/artex-global",
+      "head": "06b36d7219244c5e2b6467394f60eca160c785cf",
+      "comparison": "unavailable",
+      "ahead": null,
+      "behind": null,
+      "merge_base": null,
+      "changed_file_rows_returned": null
+    }
+  ],
+  "baseline_file_blobs": [
+    [
+      "README.md",
+      "3bddb9c84b05a523c301c1dec57aa119fbadb11e",
+      null
+    ],
+    [
+      "CHANGELOG.md",
+      "a6b36734b75754b7166c3ec459d5a9b47fef31eb",
+      null
+    ],
+    [
+      "SECURITY.md",
+      null,
+      "NOT_FOUND"
+    ],
+    [
+      "Dockerfile",
+      "fa7da7f2ca56f5d7c1d4ef869229d8a88ff116f2",
+      null
+    ],
+    [
+      "docker-compose.yml",
+      "ca788e4e2a292682728accad20e892b144296c62",
+      null
+    ],
+    [
+      ".github/workflows/release.yml",
+      "eebc15b0c4241201097d612a2531ce9ba4ca6efb",
+      null
+    ],
+    [
+      "CHANGELOG.en.md",
+      null,
+      "NOT_FOUND"
+    ]
+  ]
+}
